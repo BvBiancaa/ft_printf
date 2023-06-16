@@ -18,8 +18,8 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdint.h>
-# include "libft/libft.h"
-# include "getnextline/get_next_line_bonus.h"
+/* # include "libft/libft.h"
+# include "getnextline/get_next_line_bonus.h" */
 
 int		ft_printf(const char *s, ...);
 int		ft_checkletter(const char *s, int i, va_list a);
