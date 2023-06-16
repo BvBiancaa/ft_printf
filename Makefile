@@ -16,20 +16,20 @@ all: $(NAME)
 
 $(NAME):
 	make bonus -C libft
-	make bonus -C getnextline
+	make bonus -C get_next_line
 	gcc -Wall -Wextra -Werror -c ft_printf.c ft_printf_nbr.c
-	ar -rc $(NAME) *.o libft/*.o getnextline/*.o
+	ar -rc $(NAME) *.o libft/*.o get_next_line/*.o
 	ranlib $(NAME)
 
 clean:
 	rm -f *.o
 	rm -f libft/*.o
-	rm -f getnextline/*.o
+	rm -f get_next_line/*.o
 
 fclean: clean
 	rm -f $(NAME)
 	rm -f libft/libft.a
-	rm -f getnextline/getnextline.a
+	rm -f get_next_line/getnextline.a
 
 re: fclean all
 
